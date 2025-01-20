@@ -24,7 +24,7 @@ const Hero = () => {
         <p className='text-white sm:text-lg my-6 lg:text-xl'>I'm Oni Abdullahi Oluwabusayo (DeOracleEdge) Frontend Developer with a passion for creating beautiful and functional websites.</p>
 
         <div className='my-8'>
-          <a href='XXXXXXXXXXXXXXXXXXXXXXXXXXX' className='px-6 py-3 w-full mr-4 rounded-xl bg-gradient-to-br from-orange-500 to-pink-500 text-white'>Hire Me</a>
+          <a href='https://www.linkedin.com/in/busayo-oni-b72472345/' className='px-6 py-3 w-full mr-4 rounded-xl bg-gradient-to-br from-orange-500 to-pink-500 text-white'>Hire Me</a>
           <a href='#contact' className='px-6 py-3 w-full rounded-xl   border border-gray-400 hover:bg-gradient-to-r from-orange-500 to-pink-500 hover:border-none text-white'>Contact Me</a>
         </div>
       </div>
