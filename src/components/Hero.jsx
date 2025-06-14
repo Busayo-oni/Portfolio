@@ -44,7 +44,7 @@ const Hero = () => {
         </h1>
 
         <p className='my-6 text-white sm:text-lg lg:text-xl'>
-          I am Oni Abdullahi Oluwabusayo (DeOracleEdge), a frontend developer with a passion for crafting beautiful and functional web experiences.
+          I am Oni Abdullahi Oluwabusayo (DeOracleEdge), a frontend developer with a passion for crafting beautiful and functional web experiences.</p>
 
         <div className='flex flex-col gap-4 my-8 sm:flex-row'>
           <a
