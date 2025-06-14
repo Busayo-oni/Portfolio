@@ -1,21 +1,43 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import about from '../assets/me2.jpg'
 
 const About = () => {
   return (
-    <div className="text-white max-w-[1200px] mx-auto my-1 " id='about'>
-      <div className='md:grid md:grid-cols-2 sm:py-16 '>
+    <div className="text-white max-w-[1200px] mx-auto my-12 px-4" id="about">
+      <div className="items-center gap-8 md:grid md:grid-cols-2">
+        
+        <motion.div
+          className="py-8 mx-auto md:py-0"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+        >
+          <img
+            src={about}
+            alt="About me"
+            width={300}
+            height={300}
+            className="mx-auto rounded-3xl"
+          />
+        </motion.div>
 
-        <div className='mt-4 md:mt-0  text-left flex '>
-         <div className='my-auto mx-6'>
-            <h1 className='text-4xl font-bold mb-4 primary-color'>About Me</h1>
-            <p className='text-base lg:text-lg'>I am a passionate and dedicated individual with a strong work ethic. I am currently pursuing a Bachelor's degree in Computer Science and Engineering, where I am actively engaged in learning and growing. I am excited about the opportunities that lie ahead and am eager to contribute my skills and knowledge to any team or project.</p>
-          </div>
-        </div>
-          <img src={about} alt="" width={300} height={300} className='rounded-3xl mx-auto py-8 md:py-0 ' />
-
+        <motion.div
+          className="mt-4 text-left md:mt-0"
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h1 className="mb-4 text-4xl font-bold primary-color">About Me</h1>
+          <p className="text-base lg:text-lg">
+            I'm a frontend developer and Computer Science student with a deep
+            passion for building beautiful, performant web experiences.
+            Whether I'm creating sleek UI components, bringing ideas to life
+            with animations, or solving real-world problems with code, I'm
+            always excited to learn, build, and grow.
+          </p>
+        </motion.div>
       </div>
-      
     </div>
   )
 }
